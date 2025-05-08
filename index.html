@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Docker Compose + Apache</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0066cc;
+            text-align: center;
+        }
+        .status {
+            background: #e7f3fe;
+            border-left: 6px solid #2196F3;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Teste de Containerização</h1>
+        
+        <div class="status">
+            <h2>Status do Servidor Apache</h2>
+            <p>Esta página está sendo servida por um container Apache rodando via Docker Compose.</p>
+            <p>Se você está vendo esta mensagem, o teste foi bem-sucedido!</p>
+        </div>
+        
+        <h2>Informações sobre o projeto</h2>
+        <p>Este é um projeto de demonstração para testar:</p>
+        <ul>
+            <li>Containerização com Docker</li>
+            <li>Orquestração com Docker Compose</li>
+            <li>Servidor web Apache em um container</li>
+        </ul>
+        
+        <div class="footer">
+            <p>Gerado em: <span id="datetime"></span></p>
+            <script>
+                var dt = new Date();
+                document.getElementById("datetime").innerHTML = dt.toLocaleString();
+            </script>
+        </div>
+    </div>
+</body>
+</html>
